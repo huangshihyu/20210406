@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajpeace</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <style>
+        nav {
+            width: 100%;
+            background: transparent;
+        }
+
+        nav:hover {
+            background: #fff;
+        }
+
+        #menu a {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        #menu a:hover {
+            background: #d8d8d8;
+            /* color: #8c8c8c; */
+            text-decoration: none;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        svg {
+            width: 25px;
+            height: 25px;
+        }
+
+        h4 {
+            font-weight: 400;
+            color: rgb(57, 57, 57);
+        }
+
+        p {
+            color: rgb(57, 57, 57);
+            font-size: 0.8rem;
+            margin: 1rem 0;
+        }
+
+
+
+        footer a {
+            color: rgb(57, 57, 57);
+            font-size: 0.8rem;
+            padding-bottom: 12px;
+        }
+
+
+        /* image */
+        .img-550 {
+            width: 550px;
+            height: 550px;
+        }
+
+        .img-270 {
+            width: 270px;
+            height: 400px;
+        }
+
+        .img-220 {
+            width: 220px;
+            height: 290px;
+        }
+
+        .img-460 {
+            width: 460px;
+            height: 620px;
+        }
+
+        .img-190 {
+            width: 188;
+            height: 188px;
+            margin: 1px 0;
+        }
+
+
+
+        @media (max-width: 576px) {
+
+            .img-550 {
+                width: 224px;
+                height: 224px;
+            }
+
+            .img-270 {
+                width: 224px;
+                height: 300px;
+            }
+
+            .img-220 {
+                width: 100px;
+                height: 130px;
+            }
+
+            .img-460 {
+                width: 224px;
+                height: 300px;
+            }
+
+            .img-190 {
+                width: 86;
+                height: 86px;
+                margin: 1px 0;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="fixed-top navbar navbar-expand-lg navbar-expand-md">
+        <a class="navbar-brand logo ml-5" href="#">
+            <img src="https://www.ajpeace.com.tw/data/files/mall/settings/site_logo.png" width="80px" alt="logo">
+        </a>
+        <button class="navbar-toggler btn btn-light" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id="menu" class="navbar-nav d-flex align-items-center mr-auto ml-4">
+
+                <li class="nav-item">
+                    <a class="nav-link text-dark px-2 mx-1" href="#">最新商品</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark px-2 mx-1" href="#">全新企劃</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark px-2 mx-1" href="#">衣著</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark px-2 mx-1" href="#">配件</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark px-2 mx-1" href="#">折扣SALE!</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark px-2 mx-1" href="#">全部商品ALL</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark px-2 mx-1" href="#">OOTD</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link px-2" href="#"><img style="width: 35px;height: 35px;"
+                            src="https://www.ajpeace.com.tw/themes/mall/ajpeace/styles/ajpeace/AJimg/icon/research.png"
+                            alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-2" href="#"> <img style="width: 35px;height: 35px;"
+                            src="https://www.ajpeace.com.tw/themes/mall/ajpeace/styles/ajpeace/images/icon/login.png"
+                            alt=""></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-2" href="#"><img style="width: 35px;height: 35px;"
+                            src="https://www.ajpeace.com.tw/themes/mall/ajpeace/styles/ajpeace/images/icon/order.png"
+                            alt=""></a>
+                </li>
+            </ul>
+        </div>
+
+
+    </nav>
+    <banner id="top">
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://lifeimg.net/aj/web/newface/index-01.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://lifeimg.net/aj/web/newface/index-02.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://lifeimg.net/aj/web/newface/index-03.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://lifeimg.net/aj/web/newface/index-04.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://lifeimg.net/aj/web/newface/index-05.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://lifeimg.net/aj/web/newface/index-06.jpg" class="d-block w-100">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </banner>
+    <main>
+        <div class="container mb-5">
+            <div class="row">
+
+                <div class="col-md-12 text-center w-100 mx-auto my-3">
+                    <h4 class="my-2"> Ｗhen autumn comes. </h4>
+                    <p class="mb-5">#2020AW #All you need, all unique</p>
+                </div>
+
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-md-6 col-sm-12 my-2">
+                    <a href="#">
+                        <img class="img-550" src="https://lifeimg.net/aj/aj-index/section1-1.jpg" alt="">
+                        <p> 個性拉鍊風衣外套 NT$899</p>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-12 my-2 d-flex align-items-end">
+
+                    <a href="#">
+                        <img class="img-270" src="https://lifeimg.net/aj/aj-index/section1-2.jpg" alt="">
+                        <p>滿版印花縮腰洋裝 NT$499</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="my-3">
+        <div class="container">
+
+            <div class="row my-2">
+                <div class="col-md-12 text-center w-100 mx-auto mb-3">
+                    <h4 class="my-2"> NATURE ELEGANCE IN YOU</h4>
+                    <p class="mb-5">As temperatures drop outside, enjoy cosy moments inside. Discover relaxed
+                        and laid-back
+                        pieces,
+                        made for winter weekends at home.</p>
+                </div>
+
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-5 col-sm-5 col-md-2 mb-2">
+                    <a href="#">
+                        <img class="img-220" src="https://lifeimg.net/aj/aj-index/section5-1.jpg" alt="">
+                        <p>文青打摺背心洋裝 NT$588</p>
+                    </a>
+                </div>
+                <div class="col-5 col-sm-5 col-md-2 mb-2">
+                    <a href="#">
+                        <img class="img-220" src="https://lifeimg.net/aj/aj-index/section5-2.jpg" alt="">
+                        <p>氣質雙色圓領上衣 NT$390</p>
+                    </a>
+                </div>
+                <div class="col-5 col-sm-5 col-md-2 mb-2">
+                    <a href="#">
+                        <img class="img-220" src="https://lifeimg.net/aj/aj-index/section5-3.jpg" alt="">
+                        <p>素雙色條紋長袖襯衫 NT$450</p>
+                    </a>
+                </div>
+                <div class="col-5 col-sm-5 col-md-2 mb-2">
+                    <a href="#">
+                        <img class="img-220" src="https://lifeimg.net/aj/aj-index/section5-4.jpg" alt="">
+                        <p>優雅縫線長袖襯衫 NT$488</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="my-3">
+        <div class="container">
+            <div class="row my-2">
+                <div class="col-md-12 text-center w-100 mx-auto mb-3">
+                    <h4 class="my-2">AUTUMN SELECTION </h4>
+                    <p class="mb-3">全新官網上線，全新購物體驗</p>
+                    <div style="font-size: 0.6rem;"><a href="#" class="text-reset">shop
+                            new</a><span class="mx-2">/</span><a href="#" class="text-reset">shop all</a></div>
+                </div>
+            </div>
+            <div class="row justify-content-between  my-2">
+                <div class="col-12  col-sm-12 col-md-5 mb-2">
+                    <a href="#" class="mx-auto">
+                        <img class="img-460" src="https://lifeimg.net/aj/aj-index/section2-1.jpg" alt="">
+                        <p>設計感高腰西裝長褲 NT$499</p>
+                    </a>
+                </div>
+                <div class="col-12 col-sm-12 col-md-5 mb-2">
+                    <a href="#">
+                        <img class="img-460" src="https://lifeimg.net/aj/aj-index/section2-2.jpg" alt="">
+                        <p>滿版印花縮腰洋裝 NT$499</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <hr class="mt-5">
+        <div class="container mb-5">
+            <div class="row">
+
+                <div class="col-md-12 text-center w-100 mx-auto my-3">
+                    <h4 class="my-2"> WEEKLIY BEST ITEM </h4>
+                    <p class="mb-5">To Looking for design ingenuity hidden in simplicity.
+                        Extending the period of clothes, creat a simple and comfort ,and timelessness fashion in your
+                        daily.</p>
+
+                </div>
+
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-md-6 col-sm-12 my-2">
+                    <a href="#">
+                        <img class="img-550" src="https://lifeimg.net/aj/aj-index/section3-1.jpg" alt="">
+                        <p>捲邊落肩長袖上衣（杏）NT$399</p>
+                    </a>
+                </div>
+                <div class="col-md-3 col-sm-12 my-2 d-flex align-items-end">
+
+                    <a href="#" style="margin: 0 auto;">
+                        <img class="img-270" src="https://lifeimg.net/aj/aj-index/section3-2.jpg" alt="">
+                        <p>捲邊落肩長袖上衣（卡）NT$399</p>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <hr class="mt-5">
+        <div class="container my-3">
+            <div class="row">
+
+                <div class="col-md-12 text-center w-100 mx-auto my-3">
+                    <h4 class="my-2"> AJPEACE SHOP 2020 </h4>
+                    <p style="font-size: 0.6rem;">To creat a simple lifestyle , </p>
+                    <p class="mb-2" style="font-size: 0.6rem;"> we have prepare leisure and casual wear for all of you.
+                    </p>
+                    <a href="#" class="text-reset" style="font-size: 0.6rem;">explore</a>
+                </div>
+                <div class="col-md-12">
+                    <img class="img-responsive" src="https://lifeimg.net/aj/aj-index/section4.jpg" alt=""
+                        style="width: 100%;">
+                </div>
+            </div>
+        </div>
+        <hr class="mt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center w-100 mx-auto my-3 font-weight-light" style="font-size: 1.2rem;">
+                    INSTAGRAM</div>
+
+                <div class="col-4 col-md-2">
+                    <a href="#">
+                        <img class="img-190" src="https://lifeimg.net/aj/IG/IG242.jpg" alt="">
+                    </a>
+                </div>
+                <div class="col-4 col-md-2"><a href="#">
+                        <img class="img-190" src="https://lifeimg.net/aj/IG/IG243.jpg" alt="">
+                    </a></div>
+                <div class="col-4 col-md-2"><a href="#">
+                        <img class="img-190" src="https://lifeimg.net/aj/IG/IG244.jpg" alt="">
+                    </a></div>
+                <div class="col-4 col-md-2"><a href="#">
+                        <img class="img-190" src="https://lifeimg.net/aj/IG/IG245.jpg" alt="">
+                    </a></div>
+                <div class="col-4 col-md-2"><a href="#">
+                        <img class="img-190" src="https://lifeimg.net/aj/IG/IG246.jpg" alt="">
+                    </a></div>
+                <div class="col-4 col-md-2"><a href="#">
+                        <img class="img-190" src="https://lifeimg.net/aj/IG/IG247.jpg" alt="">
+                    </a></div>
+                <div class="col-4 col-md-2"><a href="#">
+                        <img class="img-190" src="https://lifeimg.net/aj/IG/IG248.jpg" alt="">
+                    </a></div>
+                <div class="col-4 col-md-2"><a href="#">
+                        <img class="img-190" src="https://lifeimg.net/aj/IG/IG249.jpg" alt="">
+                    </a></div>
+                <div class="col-4 col-md-2"><a href="#">
+                        <img class="img-190" src="https://lifeimg.net/aj/IG/IG250.jpg" alt="">
+                    </a></div>
+                <div class="col-4 col-md-2"><a href="#">
+                        <img class="img-190" src="https://lifeimg.net/aj/IG/IG251.jpg" alt="">
+                    </a></div>
+                <div class="col-4 col-md-2"><a href="#">
+                        <img class="img-190" src="https://lifeimg.net/aj/IG/IG252.jpg" alt="">
+                    </a></div>
+                <div class="col-4 col-md-2"><a href="#">
+                        <img class="img-190" src="https://lifeimg.net/aj/IG/IG253.jpg" alt="">
+                    </a></div>
+
+
+            </div>
+
+        </div>
+    </main>
+    <footer class="border-top my-5">
+        <div class="container">
+            <div class="row justify-content-around my-5">
+                <div class="d-flex flex-column">
+
+                    <a href="#">Customer Service</a>
+                    <a href="#">VIP</a>
+                    <a href="#">Overseas Orders</a>
+                    <a href="#">Returns & Refunds</a>
+                    <a href="#">Product Care</a>
+                </div>
+                <div class="d-flex flex-column">
+
+                    <a href="#">Store Locator</a>
+                    <a href="#">Join Us</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="d-flex flex-column">
+
+                    <a href="#">FaceBook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Line</a>
+
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+    <a href="#top" class="fixed-bottom" style="left:96%;bottom: 8%;"><svg version="1.1"
+            xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+            <title>ctrl</title>
+            <path
+                d="M23 14c-0.278 0-0.555-0.116-0.753-0.341l-6.247-7.14-6.247 7.14c-0.364 0.416-0.995 0.458-1.411 0.094s-0.458-0.995-0.094-1.411l7-8c0.19-0.217 0.464-0.341 0.753-0.341s0.563 0.125 0.753 0.341l7 8c0.364 0.416 0.322 1.047-0.094 1.411-0.19 0.166-0.424 0.247-0.658 0.247z">
+            </path>
+        </svg></a>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <script>
+
+    </script>
+</body>
+
+</html>
